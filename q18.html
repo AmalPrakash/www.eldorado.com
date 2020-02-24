@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>KEY</title>
+    </head>
+    
+    <body style="background-color: black;">
+
+
+    <div>
+    </div>
+
+    <div>
+        
+        <img src="/img/Key.png" style="display: block; margin-right: auto; margin-left: auto; width: 10%; padding-top: 50px;" alt="">
+    </div><br>
+    <h1 style=" color:white;;display: block; margin-right: auto; margin-left: auto; width: 17%;font-size: medium;text-align: center;">Your Key Goes In Here</h1>
+    <p style="display: block; margin-right: auto; margin-left: auto; width: 25%;">Text 2: <input id="text2" style="width: 500px; height: 50px; background-color: black; color: gold; font-size: x-large;text-align: center;" type="text"></p>
+        
+    <div class="button_slide slide_right" onclick="compareText()" style="display: block; margin-right: auto; margin-left: auto; width: 7%; text-align: center;">
+        <style>
+            .button_slide {
+  color: #FFF;
+  border: 2px solid rgb(216, 2, 134);
+  border-radius: 0px;
+  padding: 18px 36px;
+  display: inline-block;
+  font-family: "Lucida Console", Monaco, monospace;
+  font-size: 14px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  box-shadow: inset 0 0 0 0 #D80286;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.slide_right:hover {
+  box-shadow: inset 400px 0 0 0 rgb(212,175,55);
+}
+
+#outer {
+  width: 364px;
+  margin: 50px auto 0 auto;
+  text-align: center;
+}
+        </style>
+        UNLOCK</div>
+
+       
+
+    <script>
+
+document.addEventListener('contextmenu', event => event.preventDefault());
+function compareText() {
+    var text2 = document.getElementById("text2").value;
+    var text1 = "olympics 1988"
+    
+    if (text1 == text2) {
+        alert("CORRECT! CLICK OK TO PROCEED TO THE NEXT CLUE");
+        window.location.href="/q19.html";
+    } else {
+        alert("BLOODY DAMN ANOTHER WORLD")
+        
+    }
+}
+
+    </script>
+    </body>
+</html>
